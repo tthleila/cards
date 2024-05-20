@@ -1,3 +1,16 @@
+﻿
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+.dark-mode.nav {
+    background-color: dimgrey;
+    color: white;
+}
+.light-mode {
+    background-color: white;
+    color: black;
+}
 .fo-toast{
     width:30%;
     height30%>
