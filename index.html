@@ -75,47 +75,6 @@
         <div class="parallax"></div>
         <button id="sotetModGomb" onclick="toggleSotetMod()">Sötét mód</button>
     </div>
-    <div role="dialog" tabindex="0" class="qbWidget position--full_width">
-        <amp-iframe width="100"
-                    height="100"
-                    id="qbWidgetFrame"
-                    class="qbWidget--frame"
-                    allowtransparency
-                    sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-presentation allow-popups allow-popups-to-escape-sandbox allow-forms allow-modals allow-same-origin"
-                    layout="responsive"
-                    frameborder="0"
-                    src="https://botsrv2.com/qb/embed/9W6vdbONawEyBJ3p/LO9oPr9QQZrpvqRG"
-                    hidden>
-            <amp-img layout="fill" class="qbWidget--frame-placeholder" layout="responsive" placeholder src="https://static.botsrv2.com/website/img/quriobot_favicon.1727b193.png" style="opacity: 0"></amp-img>
-        </amp-iframe>
-        <div role="button"
-             tabindex="0"
-             aria-haspopup="dialog"
-             class="qbWidgetButton show position--full_width showPopup"
-             id="qbWidgetButton"
-             on="tap:qbWidgetButton.toggleClass(class='showPopup', force=true)">
-
-            <div role="dialog" tabindex="0" class="qbWidgetPopup" id="qbWidgetPopup">
-                <p class="qbWidgetPopup--title">Can I help you?</p>
-                <button class="qbWidgetPopup--button"
-                        id="qbPopupButton"
-                        on="tap:qbWidgetButton.toggleClass(class='show', force=false),qbWidgetButton.toggleClass(class='showPopup', force=false),qbWidgetButton.hide(),qbWidgetButtonClose.show(),qbWidgetFrame.show()">
-                    Start Quriobot
-                </button>
-                <button class="qbWidgetPopup--close"
-                        on="tap:qbWidgetButton.toggleClass(class='showPopup', force=false)"
-                        id="qbPopupClose"
-                        aria-label="Close"></button>
-            </div>
-
-        </div>
-        <div role="button"
-             tabindex="0"
-             class="qbWidgetButton--close"
-             id="qbWidgetButtonClose"
-             hidden
-             on="tap:qbWidgetButton.toggleClass(class='show', force=true), qbWidgetButton.toggleClass(class='showPopup', force=false),qbWidgetButton.show(),qbWidgetButtonClose.hide(),qbWidgetFrame.hide()"></div>
-    </div>
     <script>
         function toggleSotetMod() {
             var body = document.body;
